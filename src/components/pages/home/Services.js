@@ -1,21 +1,32 @@
 /** @jsx jsx */
 import React from "react"
 import { jsx, css } from "@emotion/core"
+import styled from "@emotion/styled"
+import { Link } from "react-router-dom"
+import THEMES from "../../../styles/themes"
 
 import dog from "../../../images/dog2wide.jpg"
 
+const primary = THEMES.colors.primary
+
 const Services = () => {
+  const StyledLink = styled(Link)`
+    font-size: 1.2em;
+    font-weight: 800;
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      color: ${primary};
+    }
+  `
   return (
     <section
       css={css`
         position: relative;
-        color: white;
-        text-shadow: 2px 2px 6px #000;
+
         margin: -10px;
-        height: 500px;
-        h1 {
-          font-size: 4em;
-        }
+        background: rgba(0, 0, 0, 1);
       `}
     >
       <img
@@ -25,19 +36,15 @@ const Services = () => {
           position: absolute;
           top: 0;
           left: 0;
-          /* height: 500px; */
           width: 100%;
-          object-fit: contain;
+          height: 100%;
+          object-fit: cover;
           opacity: 50%;
         `}
       />
       <div
         css={css`
           position: relative;
-          /* top: 20px; */
-          /* left: 25%; */
-          /* transform: translateY(-50%); */
-          /* text-align: center; */
           width: 100%;
           opacity: 100% !important;
           display: flex;
@@ -47,37 +54,29 @@ const Services = () => {
           margin-right: auto;
           padding-left: 15px;
           padding-right: 15px;
-          /* opacity: 100%; */
-          /* z-index: 100; */
+
+          @media only screen and (min-width: 768px) {
+            width: 50%;
+          }
           & > * {
-            color: white;
+            color: #a9a9a9;
             flex-basis: 300px;
             text-align: center;
             background: transparent;
             padding: 5px;
-            /* width: 500px; */
-            margin-bottom: 40px;
-            /* width: 400px !important; */
+            margin: 20px 0;
           }
         `}
       >
         <div css={css``}>
-          <h4>Pet Sitting</h4>
+          <StyledLink>Pet Sitting</StyledLink>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
             ornare ante nec lacus sollicitudin, quis venenatis quam mollis.
           </p>
         </div>
         <div css={css``}>
-          <h4>Dog Walking</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-            ornare ante nec lacus sollicitudin, quis venenatis quam mollis.
-            Aliquam dignissim porta sollicitudin.
-          </p>
-        </div>
-        <div css={css``}>
-          <h4>Group Training</h4>
+          <StyledLink>Dog Walking</StyledLink>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
             ornare ante nec lacus sollicitudin, quis venenatis quam mollis.
@@ -85,7 +84,15 @@ const Services = () => {
           </p>
         </div>
         <div css={css``}>
-          <h4>Training Consultation</h4>
+          <StyledLink>Group Training</StyledLink>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+            ornare ante nec lacus sollicitudin, quis venenatis quam mollis.
+            Aliquam dignissim porta sollicitudin.
+          </p>
+        </div>
+        <div css={css``}>
+          <StyledLink>Training Consultation</StyledLink>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
             ornare ante nec lacus sollicitudin, quis venenatis quam mollis.

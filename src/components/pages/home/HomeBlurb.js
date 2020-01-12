@@ -11,12 +11,21 @@ const HomeBlurb = () => {
     <section
       css={css`
         display: flex;
+        flex-direction: column;
         width: 100%;
         padding: 75px 10px;
 
+        @media only screen and (min-width: 600px) {
+          flex-direction: row;
+        }
+
         & > * {
-          flex-basis: 50%;
+          flex-basis: 100%;
           padding: 10px;
+
+          @media only screen and (min-width: 600px) {
+            flex-basis: 50%;
+          }
         }
       `}
     >

@@ -52,7 +52,6 @@ const Home = () => {
         <h1
           css={css`
             margin: 0 0 10px;
-            font-size: 5em !important;
           `}
         >
           Everything Is Pawsible
@@ -65,7 +64,7 @@ const Home = () => {
         `}
       >
         <HomeBlurb />
-        {/* <Services /> */}
+        <Services />
       </div>
     </div>
   )
