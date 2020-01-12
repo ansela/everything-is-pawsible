@@ -54,6 +54,10 @@ export default () => {
       <div>
         <StyledLink to="/">Home</StyledLink>
         <StyledLink to="/about">About</StyledLink>
+        <StyledLink to="/services">Services</StyledLink>
+        <StyledLink to="/events">Events</StyledLink>
+        <StyledLink to="/pricing">Pricing</StyledLink>
+        <StyledLink to="/blog">Blog</StyledLink>
         <StyledLink to="/contact">Contact</StyledLink>
       </div>
     </nav>

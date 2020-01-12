@@ -1,8 +1,8 @@
 import React from "react"
 import styled from "@emotion/styled"
-import AboutUs from "./components/footer/AboutUs"
-import ContactUs from "./components/footer/ContactUs"
-import Newsletter from "./components/footer/Newsletter"
+import AboutUs from "./AboutUs"
+import ContactUs from "./ContactUs"
+import Newsletter from "./Newsletter"
 
 const Footer = () => {
   const StyledFooter = styled.div`

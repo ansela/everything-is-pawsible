@@ -50,26 +50,34 @@ const Services = () => {
           display: flex;
           flex-wrap: wrap;
           justify-content: space-evenly;
-          margin-left: auto;
-          margin-right: auto;
-          padding-left: 15px;
-          padding-right: 15px;
+          padding: 30px 0;
 
-          @media only screen and (min-width: 768px) {
-            width: 50%;
+          @media only screen and (min-width: 600px) {
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 80px 0;
           }
           & > * {
             color: #a9a9a9;
-            flex-basis: 300px;
             text-align: center;
             background: transparent;
             padding: 5px;
             margin: 20px 0;
+            flex-basis: 100%;
+
+            @media screen and (min-width: 600px) {
+              flex-basis: 45%;
+            }
+
+            @media screen and (min-width: 768px) {
+              flex-basis: 30%;
+            }
           }
         `}
       >
         <div css={css``}>
-          <StyledLink>Pet Sitting</StyledLink>
+          <StyledLink>Kennel</StyledLink>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
             ornare ante nec lacus sollicitudin, quis venenatis quam mollis.
@@ -92,7 +100,23 @@ const Services = () => {
           </p>
         </div>
         <div css={css``}>
-          <StyledLink>Training Consultation</StyledLink>
+          <StyledLink>In Home Services</StyledLink>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+            ornare ante nec lacus sollicitudin, quis venenatis quam mollis.
+            Aliquam dignissim porta sollicitudin.
+          </p>
+        </div>
+        <div css={css``}>
+          <StyledLink>Obedience Class</StyledLink>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+            ornare ante nec lacus sollicitudin, quis venenatis quam mollis.
+            Aliquam dignissim porta sollicitudin.
+          </p>
+        </div>
+        <div css={css``}>
+          <StyledLink>Private Training</StyledLink>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
             ornare ante nec lacus sollicitudin, quis venenatis quam mollis.

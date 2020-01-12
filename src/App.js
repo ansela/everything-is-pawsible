@@ -4,7 +4,7 @@ import { jsx, css } from "@emotion/core"
 import styled from "@emotion/styled"
 import { BrowserRouter as Router } from "react-router-dom"
 import NavBar from "./NavBar"
-import Footer from "./Footer"
+import Footer from "./components/footer/Footer"
 import Content from "./Content"
 
 export default () => {
