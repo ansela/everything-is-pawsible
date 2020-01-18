@@ -54,7 +54,13 @@ const HomeBlurb = () => {
         >
           Missy will change your life
         </h6>
-        <h2>Why should you use us?</h2>
+        <h2
+          css={css`
+            color: black;
+          `}
+        >
+          Why should you use us?
+        </h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
           ornare ante nec lacus sollicitudin, quis venenatis quam mollis.

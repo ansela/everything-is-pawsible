@@ -2,14 +2,15 @@
 import React from "react"
 import { jsx, css } from "@emotion/core"
 import styled from "@emotion/styled"
+import { useHistory } from "react-router-dom"
 import HeroImage from "../../../HeroImage"
-import TransparentButton from "../../TransparentButton"
 
 import THEMES from "../../../styles/themes"
 import HomeBlurb from "./HomeBlurb"
 import Services from "./Services"
 
 const Home = () => {
+  const history = useHistory()
   const buttonColor = THEMES.colors.primary
   const StyledButton = styled.button`
     color: ${buttonColor};
@@ -21,6 +22,7 @@ const Home = () => {
     &:hover {
       background: ${buttonColor};
       color: white;
+      cursor: pointer;
     }
   `
   return (
@@ -56,7 +58,9 @@ const Home = () => {
         >
           Everything Is Pawsible
         </h1>
-        <StyledButton>Schedule Consultation</StyledButton>
+        <StyledButton onClick={() => history.push("/schedule")}>
+          Schedule Consultation
+        </StyledButton>
       </HeroImage>
       <div
         css={css`

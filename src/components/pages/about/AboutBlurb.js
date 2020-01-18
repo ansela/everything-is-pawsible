@@ -2,6 +2,7 @@
 import React from "react"
 import { jsx, css } from "@emotion/core"
 import styled from "@emotion/styled"
+import { useHistory } from "react-router-dom"
 
 import THEMES from "../../../styles/themes"
 
@@ -10,6 +11,8 @@ import dog3wide from "../../../images/dog3wide.jpg"
 const primary = THEMES.colors.primary
 
 const AboutBlurb = () => {
+  const history = useHistory()
+
   const StyledButton = styled.button`
     background-color: black;
     color: white;
@@ -81,7 +84,9 @@ const AboutBlurb = () => {
           vestibulum mi, vel feugiat dui consequat eu. Donec ac dignissim sem.
           Sed a nulla a eros laoreet hendrerit vel sed orci.
         </p>
-        <StyledButton>Book a Consultation Now</StyledButton>
+        <StyledButton onClick={() => history.push("/schedule")}>
+          Book a Consultation Now
+        </StyledButton>
       </div>
     </section>
   )
