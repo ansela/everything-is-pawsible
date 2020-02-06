@@ -9,7 +9,13 @@ import Breadcrumbs from "./Breadcrumbs"
 import { pages } from "./constants/pageContent"
 
 const ContentItem = ({ title, breadcrumbs, children }) => (
-  <>
+  <div
+    css={css`
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    `}
+  >
     <HeroImage>
       <h1>{title}</h1>
       <Breadcrumbs items={breadcrumbs} />
@@ -17,11 +23,13 @@ const ContentItem = ({ title, breadcrumbs, children }) => (
     <div
       css={css`
         padding: 10px;
+        flex: 1 1 100%;
+        height: 100%;
       `}
     >
       {children}
     </div>
-  </>
+  </div>
 )
 
 const Content = props => {

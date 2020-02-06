@@ -8,7 +8,7 @@ const primary = THEMES.colors.primary
 const Copyright = () => {
   return (
     <div>
-      Copyright ©2020 All rights Reserved |{" "}
+      Copyright ©2020 All Rights Reserved | Website design by{" "}
       <a
         href="mailto:ashley.ansell@gmail.com"
         css={css`

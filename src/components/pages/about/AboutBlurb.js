@@ -73,7 +73,13 @@ const AboutBlurb = () => {
         >
           professional and engaging
         </h6>
-        <h1>Missy Ansell</h1>
+        <h1
+          css={css`
+            color: black;
+          `}
+        >
+          Missy Ansell
+        </h1>
         <h6>Over 10 years of training and kennel expertise</h6>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
