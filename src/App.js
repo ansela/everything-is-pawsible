@@ -7,6 +7,8 @@ import NavBar from "./NavBar"
 import Footer from "./components/footer/Footer"
 import Content from "./Content"
 
+// import "bootstrap/dist/css/bootstrap.min.css"
+
 export default () => {
   const StyledContent = styled(Content)`
     flex: 1 1 100%;
