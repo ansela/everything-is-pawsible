@@ -1,23 +1,15 @@
 /** @jsx jsx */
-import React, { useState } from "react"
+import React from "react"
 import { css, jsx } from "@emotion/core"
 import styled from "@emotion/styled"
 import { Link, useHistory } from "react-router-dom"
-import Modal from "react-bootstrap/Modal"
 
 import THEMES from "../../../styles/themes"
 
 const primary = THEMES.colors.primary
 
-const Service = ({ title, content, linkTo, imgSrc }) => {
-  const [show, setShow] = useState(false)
+const Service = ({ title, overviewBlurb, linkTo, imgSrc }) => {
   const history = useHistory()
-
-  const closeModal = () => {
-    console.log("close modal")
-    setShow(false)
-  }
-
   const StyledLink = styled(Link)`
     font-size: 1.2em;
     font-weight: 800;
@@ -43,7 +35,7 @@ const Service = ({ title, content, linkTo, imgSrc }) => {
           box-shadow: -15px 15px 20px 0px rgba(157, 157, 157, 0.3);
         }
       `}
-      onClick={() => setShow(true)}
+      onClick={() => history.push(linkTo)}
     >
       <StyledImg src={imgSrc} />
       <StyledLink to={linkTo}>{title}</StyledLink>
@@ -52,12 +44,8 @@ const Service = ({ title, content, linkTo, imgSrc }) => {
           color: #777777;
         `}
       >
-        {content}
+        {overviewBlurb}
       </p>
-      <Modal show={show} onHide={closeModal}>
-        This is a modal
-        <button onClick={closeModal}>close</button>
-      </Modal>
     </div>
   )
 }

@@ -19,31 +19,31 @@ export const pages = {
   services: {
     path: "/services",
     title: "Services",
-    breadcrumbs: [homeBreadcrumb, { to: "/schedule", title: "Schedule" }],
+    breadcrumbs: [homeBreadcrumb, { to: "/services", title: "Services" }],
     content: () => <Services />
   },
   events: {
     path: "/events",
     title: "Events",
-    breadcrumbs: [homeBreadcrumb, { to: "/schedule", title: "Schedule" }],
+    breadcrumbs: [homeBreadcrumb, { to: "/events", title: "Events" }],
     content: () => <Events />
   },
   pricing: {
     path: "/pricing",
     title: "Pricing",
-    breadcrumbs: [homeBreadcrumb, { to: "/schedule", title: "Schedule" }],
+    breadcrumbs: [homeBreadcrumb, { to: "/pricing", title: "Pricing" }],
     content: () => <Pricing />
   },
   blog: {
     path: "/blog",
     title: "Blog",
-    breadcrumbs: [homeBreadcrumb, { to: "/schedule", title: "Schedule" }],
+    breadcrumbs: [homeBreadcrumb, { to: "/blog", title: "Blog" }],
     content: () => <Blog />
   },
   contact: {
     path: "/contact",
     title: "Contact",
-    breadcrumbs: [homeBreadcrumb, { to: "/schedule", title: "Schedule" }],
+    breadcrumbs: [homeBreadcrumb, { to: "/contact", title: "Contact" }],
     content: () => <Contact />
   },
   schedule: {
