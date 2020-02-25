@@ -61,7 +61,12 @@ const HomeBlurb = () => {
         >
           Why should you use us?
         </h2>
-        <p>
+        <p
+          css={css`
+            font-size: 16px;
+            line-height: 32px;
+          `}
+        >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
           ornare ante nec lacus sollicitudin, quis venenatis quam mollis.
           Aliquam dignissim porta sollicitudin. Nulla volutpat erat a ipsum
