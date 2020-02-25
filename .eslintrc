@@ -1,0 +1,9 @@
+{
+  "extends": "react-app",
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": "warn",
+    "semi": [1, "never"],
+    "no-unused-vars": [1, { "varsIgnorePattern": "React" }]
+  }
+}

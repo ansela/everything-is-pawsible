@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+/** @jsx jsx */
+import React from "react"
+import { jsx, css } from "@emotion/core"
+import styled from "@emotion/styled"
+import { BrowserRouter as Router } from "react-router-dom"
+import NavBar from "./NavBar"
+import Footer from "./components/footer/Footer"
+import Content from "./Content"
 
-function App() {
+// import "bootstrap/dist/css/bootstrap.min.css"
+
+export default () => {
+  const StyledContent = styled(Content)`
+    flex: 1 1 100%;
+  `
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+      <div
+        css={css`
+          display: flex;
+          flex-direction: column;
+          height: 100vh;
+        `}
+      >
+        <NavBar />
+        <StyledContent />
+        <Footer />
+      </div>
+    </Router>
+  )
 }
-
-export default App;
