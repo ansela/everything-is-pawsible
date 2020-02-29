@@ -20,6 +20,10 @@ const Services = () => {
       color: ${primary};
     }
   `
+  const Content = styled.div`
+    font-size: 14px;
+    margin-top: 1em;
+  `
   return (
     <section
       css={css`
@@ -78,50 +82,50 @@ const Services = () => {
       >
         <div css={css``}>
           <StyledLink>Kennel</StyledLink>
-          <p>
+          <Content>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
             ornare ante nec lacus sollicitudin, quis venenatis quam mollis.
-          </p>
+          </Content>
         </div>
         <div css={css``}>
           <StyledLink>Dog Walking</StyledLink>
-          <p>
+          <Content>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
             ornare ante nec lacus sollicitudin, quis venenatis quam mollis.
             Aliquam dignissim porta sollicitudin.
-          </p>
+          </Content>
         </div>
         <div css={css``}>
           <StyledLink>Group Training</StyledLink>
-          <p>
+          <Content>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
             ornare ante nec lacus sollicitudin, quis venenatis quam mollis.
             Aliquam dignissim porta sollicitudin.
-          </p>
+          </Content>
         </div>
         <div css={css``}>
           <StyledLink>In Home Services</StyledLink>
-          <p>
+          <Content>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
             ornare ante nec lacus sollicitudin, quis venenatis quam mollis.
             Aliquam dignissim porta sollicitudin.
-          </p>
+          </Content>
         </div>
         <div css={css``}>
           <StyledLink>Obedience Class</StyledLink>
-          <p>
+          <Content>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
             ornare ante nec lacus sollicitudin, quis venenatis quam mollis.
             Aliquam dignissim porta sollicitudin.
-          </p>
+          </Content>
         </div>
         <div css={css``}>
           <StyledLink>Private Training</StyledLink>
-          <p>
+          <Content>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
             ornare ante nec lacus sollicitudin, quis venenatis quam mollis.
             Aliquam dignissim porta sollicitudin.
-          </p>
+          </Content>
         </div>
       </div>
     </section>

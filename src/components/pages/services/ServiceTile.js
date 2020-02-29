@@ -39,13 +39,15 @@ const Service = ({ title, overviewBlurb, linkTo, imgSrc }) => {
     >
       <StyledImg src={imgSrc} />
       <StyledLink to={linkTo}>{title}</StyledLink>
-      <p
+      <div
         css={css`
           color: #777777;
+          font-size: 14px;
+          margin: 1em 0;
         `}
       >
         {overviewBlurb}
-      </p>
+      </div>
     </div>
   )
 }

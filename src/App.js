@@ -12,6 +12,10 @@ import Content from "./Content"
 export default () => {
   const StyledContent = styled(Content)`
     flex: 1 1 100%;
+    p {
+      font-size: 16px;
+      line-height: 32px;
+    }
   `
   return (
     <Router>
