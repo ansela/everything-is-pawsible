@@ -19,10 +19,10 @@ const Breadcrumbs = ({ items }) => {
   return (
     <div>
       {items.map((item, i) => (
-        <>
+        <span key={item.to}>
           {!!i && " / "}
           <StyledLink to={item.to}>{item.title}</StyledLink>
-        </>
+        </span>
       ))}
     </div>
   )

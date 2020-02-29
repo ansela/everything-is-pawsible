@@ -42,7 +42,7 @@ const Content = props => {
     >
       <Switch>
         {Object.values(pages).map(({ path, title, breadcrumbs, content }) => (
-          <Route path={path}>
+          <Route path={path} key={path}>
             <ContentItem title={title} breadcrumbs={breadcrumbs}>
               {content()}
             </ContentItem>

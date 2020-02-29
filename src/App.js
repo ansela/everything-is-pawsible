@@ -6,6 +6,7 @@ import { BrowserRouter as Router } from "react-router-dom"
 import NavBar from "./NavBar"
 import Footer from "./components/footer/Footer"
 import Content from "./Content"
+import ContactHeader from "./components/ContactHeader"
 
 // import "bootstrap/dist/css/bootstrap.min.css"
 
@@ -26,6 +27,7 @@ export default () => {
           height: 100vh;
         `}
       >
+        <ContactHeader />
         <NavBar />
         <StyledContent />
         <Footer />
