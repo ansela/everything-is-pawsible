@@ -21,6 +21,12 @@ const content =
 
 export const Content = ({ title, prices, imgSrc }) => {
   const StyledContent = styled.div`
+    @media screen and (max-width: 1024px) {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+    }
+
     p,
     ul {
       line-height: 32px;
@@ -37,9 +43,11 @@ export const Content = ({ title, prices, imgSrc }) => {
     margin: 16px 0;
   `
   const StyledPricingBox = styled(PricingBox)`
-    position: relative;
-    float: right;
-    margin: -200px -10% 15px 15px;
+    @media screen and (min-width: 1025px) {
+      position: relative;
+      float: right;
+      margin: -200px -10% 15px 15px;
+    }
   `
 
   const List = styled.ul`

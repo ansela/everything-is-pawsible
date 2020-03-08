@@ -6,13 +6,15 @@ import theme from "../../../styles/themes"
 const primary = theme.colors.primary
 
 const StyledPricingBox = styled.div`
-  box-shadow: 0 0 4px 5px rgba(0, 0, 0, 0.15);
-  width: 400px;
   background: white;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  align-self: flex-end;
+  box-shadow: 0 0 4px 5px rgba(0, 0, 0, 0.15);
+  @media screen and (min-width: 1025px) {
+    width: 400px;
+    align-self: flex-end;
+  }
 
   h1 {
     color: ${primary};
