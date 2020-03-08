@@ -36,6 +36,11 @@ const Footer = () => {
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 15px;
+
+    @media screen and (max-width: 650px) {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
   `
   return (
     <div

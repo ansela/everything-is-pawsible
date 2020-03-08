@@ -15,6 +15,7 @@ const SocialMedia = () => {
   const StyledSocial = styled.div`
     display: flex;
     justify-content: space-evenly;
+    justify-self: center;
   `
   const Icon = styled.div`
     padding: 15px;

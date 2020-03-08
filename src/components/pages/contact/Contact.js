@@ -9,6 +9,19 @@ import THEMES from "../../../styles/themes"
 const Contact = () => {
   const primary = THEMES.colors.primary
 
+  const ContactCard = styled.div`
+    display: flex;
+    flex: 1 1 100%;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1024px) {
+      justify-content: space-around;
+    }
+
+    @media screen and (max-width: 650px) {
+      flex-direction: column;
+    }
+  `
   const Column = styled.div`
     flex-basis: 30%;
     padding: 20px 0;
@@ -17,6 +30,13 @@ const Contact = () => {
     justify-content: space-between;
     height: 200px;
   `
+  const ContactCardColumn = styled(Column)`
+    flex-basis: 45%;
+
+    @media screen and (max-width: 650px) {
+      flex-basis: 100%;
+    }
+  `
   const Row = styled.div`
     padding: 10px;
     display: flex;
@@ -24,10 +44,13 @@ const Contact = () => {
   `
   const Input = styled.input`
     padding: 15px;
-    /* margin: 10px 0; */
     width: 100%;
     box-sizing: border-box;
     font-size: 1em;
+
+    @media screen and (max-width: 650px) {
+      margin: 10px 0;
+    }
   `
   const Icon = styled(FontAwesomeIcon)`
     color: ${primary};
@@ -68,7 +91,7 @@ const Contact = () => {
         flex-direction: column;
         margin: 50px auto 100px;
         align-items: center;
-        width: 1140px;
+        max-width: 1140px;
       `}
     >
       <iframe
@@ -93,9 +116,18 @@ const Contact = () => {
             display: flex;
             width: 100%;
             justify-content: space-between;
+            @media screen and (max-width: 1024px) {
+              flex-direction: column;
+            }
           `}
         >
-          <Column>
+          <Column
+            css={css`
+              @media screen and (max-width: 1024px) {
+                align-items: center;
+              }
+            `}
+          >
             <Row>
               <Icon icon={faHome} />{" "}
               <div>
@@ -118,24 +150,26 @@ const Contact = () => {
               </div>
             </Row>
           </Column>
-          <Column>
-            <Input type="text" placeholder="Enter your name" />
+          <ContactCard>
+            <ContactCardColumn>
+              <Input type="text" placeholder="Enter your name" />
 
-            <Input type="email" placeholder="Enter email address" />
+              <Input type="email" placeholder="Enter email address" />
 
-            <Input type="text" placeholder="Enter your subject" />
-          </Column>
-          <Column>
-            <textarea
-              placeholder="message"
-              css={css`
-                height: 100%;
-                font-size: 1em;
-                padding: 10px;
-                border: 1px solid #ced4da;
-              `}
-            />
-          </Column>
+              <Input type="text" placeholder="Enter your subject" />
+            </ContactCardColumn>
+            <ContactCardColumn>
+              <textarea
+                placeholder="message"
+                css={css`
+                  height: 100%;
+                  font-size: 1em;
+                  padding: 10px;
+                  border: 1px solid #ced4da;
+                `}
+              />
+            </ContactCardColumn>
+          </ContactCard>
         </div>
         <StyledButton type="submit">Send Message</StyledButton>
       </div>
