@@ -25,6 +25,7 @@ export default ({ height, children }) => {
           width: 100%;
           object-fit: cover;
           opacity: 50%;
+          visibility: visible;
         `}
       />
       <div

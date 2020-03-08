@@ -44,6 +44,7 @@ const Services = () => {
           height: 100%;
           object-fit: cover;
           opacity: 50%;
+          visibility: visible;
         `}
       />
       <div
