@@ -6,7 +6,7 @@ import { useHistory } from "react-router-dom"
 
 import THEMES from "../../../styles/themes"
 
-import dog3wide from "../../../images/dog3wide.jpg"
+import missyPic from "../../../images/home1.jpg"
 
 const primary = THEMES.colors.primary
 
@@ -54,8 +54,8 @@ const AboutBlurb = () => {
         `}
       >
         <img
-          src={dog3wide}
-          alt="puppy running"
+          src={missyPic}
+          alt="Missy with two dogs"
           css={css`
             height: auto;
             width: 100%;

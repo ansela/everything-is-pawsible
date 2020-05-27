@@ -55,9 +55,9 @@ export default () => {
     { to: "/about", label: "About" },
     { to: "/services", label: "Services" },
     { to: "/schedule", label: "Schedule" },
-    { to: "/events", label: "Events" },
-    { to: "/pricing", label: "Pricing" },
-    { to: "/blog", label: "Blog" },
+    // { to: "/events", label: "Events" },
+    // { to: "/pricing", label: "Pricing" },
+    // { to: "/blog", label: "Blog" },
     { to: "/contact", label: "Contact" }
   ]
   const menu = (

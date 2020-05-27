@@ -5,7 +5,7 @@ import styled from "@emotion/styled"
 import { Link } from "react-router-dom"
 import THEMES from "../../../styles/themes"
 
-import dog from "../../../images/dog2wide.jpg"
+import dog from "../../../images/missy/dog2.jpg"
 
 const primary = THEMES.colors.primary
 
@@ -29,13 +29,13 @@ const Services = () => {
       css={css`
         position: relative;
 
-        margin: -10px;
+        margin: 0px -10px;
         background: rgba(0, 0, 0, 1);
       `}
     >
       <img
         src={dog}
-        alt="Three Dogs"
+        alt="A dog"
         css={css`
           position: absolute;
           top: 0;

@@ -4,7 +4,7 @@ import { jsx, css } from "@emotion/core"
 
 import THEMES from "../../../styles/themes"
 
-import dog1wide from "../../../images/dog1wide.jpg"
+import missyPic from "../../../images/missy/missy-feyre.jpg"
 
 const HomeBlurb = () => {
   return (
@@ -35,8 +35,8 @@ const HomeBlurb = () => {
         `}
       >
         <img
-          src={dog1wide}
-          alt="puppy looking left"
+          src={missyPic}
+          alt="Missy with two dogs"
           css={css`
             height: auto;
             width: 100%;

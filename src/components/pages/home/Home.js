@@ -8,6 +8,7 @@ import HeroImage from "../../../HeroImage"
 import THEMES from "../../../styles/themes"
 import HomeBlurb from "./HomeBlurb"
 import Services from "./Services"
+import InstagramFeed from "../../InstagramFeed"
 
 const Home = () => {
   const history = useHistory()
@@ -69,6 +70,7 @@ const Home = () => {
       >
         <HomeBlurb />
         <Services />
+        <InstagramFeed />
       </div>
     </div>
   )
