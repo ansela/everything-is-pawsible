@@ -20,9 +20,20 @@ const Service = ({ title, overviewBlurb, linkTo, imgSrc }) => {
       color: ${primary};
     }
   `
+  const StyledImgWrapper = styled.div`
+    padding-top: 66.66%;
+    position: relative;
+  `
   const StyledImg = styled.img`
     display: inline-block;
     width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    object-fit: cover;
   `
   return (
     <div
@@ -37,7 +48,10 @@ const Service = ({ title, overviewBlurb, linkTo, imgSrc }) => {
       `}
       onClick={() => history.push(linkTo)}
     >
-      <StyledImg src={imgSrc} />
+      <StyledImgWrapper>
+        <StyledImg src={imgSrc} />
+      </StyledImgWrapper>
+
       <StyledLink to={linkTo}>{title}</StyledLink>
       <div
         css={css`

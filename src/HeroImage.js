@@ -2,7 +2,7 @@
 import React from "react"
 import { css, jsx } from "@emotion/core"
 
-import hero from "./images/hero.jpg"
+import missyPic from "./images/home2.jpg"
 
 export default ({ height, children }) => {
   return (
@@ -17,13 +17,14 @@ export default ({ height, children }) => {
       `}
     >
       <img
-        src={hero}
-        alt="Three Dogs"
+        src={missyPic}
+        alt="Missy and dogs"
         css={css`
           display: flex;
           height: ${height || 25}vh;
           width: 100%;
           object-fit: cover;
+          object-position: 0 0;
           opacity: 50%;
           visibility: visible;
         `}

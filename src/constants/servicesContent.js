@@ -2,12 +2,12 @@ import React from "react"
 import styled from "@emotion/styled"
 import PricingBox from "../components/pages/services/PricingBox"
 
-import img1 from "../images/about3.jpg"
-import img2 from "../images/home1.jpg"
-import img3 from "../images/home2.jpg"
-import img4 from "../images/home3.jpg"
-import img5 from "../images/home4.jpg"
-import img6 from "../images/dog1wide.jpg"
+import kennelPic from "../images/missy/dog15.jpg"
+import walkingPic from "../images/home3.jpg"
+import groupPic from "../images/missy/bunch-o-dogs.jpg"
+import inHomePic from "../images/home4.jpg"
+import obediencePic from "../images/missy/three-dogs.jpg"
+import privatePic from "../images/about3.jpg"
 
 import theme from "../styles/themes"
 const primary = theme.colors.primary
@@ -98,7 +98,7 @@ export const services = {
   kennel: {
     title: "Kennel",
     overviewBlurb: content,
-    imgSrc: img1,
+    imgSrc: kennelPic,
     prices: [
       "One Day: $25",
       "5 Day Pass: $115 ($23/day)",
@@ -109,7 +109,7 @@ export const services = {
   walking: {
     title: "Dog Walking",
     overviewBlurb: content,
-    imgSrc: img2,
+    imgSrc: walkingPic,
     prices: [
       "One Walk: $10",
       "5 Walk Pass: $45 ($9/walk)",
@@ -120,7 +120,7 @@ export const services = {
   training: {
     title: "Group Training",
     overviewBlurb: content,
-    imgSrc: img3,
+    imgSrc: groupPic,
     prices: [
       "One Day: $25",
       "5 Day Pass: $115 ($23/day)",
@@ -131,7 +131,7 @@ export const services = {
   "in-home": {
     title: "In Home Services",
     overviewBlurb: content,
-    imgSrc: img4,
+    imgSrc: inHomePic,
     prices: [
       "In home services vary depending on the service needed. Please contact us for more information."
     ]
@@ -139,7 +139,7 @@ export const services = {
   obedience: {
     title: "Obedience Class",
     overviewBlurb: content,
-    imgSrc: img5,
+    imgSrc: obediencePic,
     prices: [
       "One Day: $25",
       "5 Day Pass: $115 ($23/day)",
@@ -150,7 +150,7 @@ export const services = {
   private: {
     title: "Private Training",
     overviewBlurb: content,
-    imgSrc: img6,
+    imgSrc: privatePic,
     prices: [
       "One Day: $40",
       "5 Day Pass: $190 ($38/day)",
