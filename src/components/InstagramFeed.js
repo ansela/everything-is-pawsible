@@ -108,7 +108,7 @@ const InstagramFeed = () => {
 
   return (
     <Carousel>
-      {images.slice(0, numImages).map(image => {
+      {(images || []).slice(0, numImages).map(image => {
         const {
           id,
           media_type: mediaType,
